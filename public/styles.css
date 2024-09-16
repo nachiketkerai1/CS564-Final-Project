@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  margin: 0;
+  color: #333;
+}
+
+#app {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  width: 100%;
+  margin: 20px;
+}
+
+h1, h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form {
+  margin-top: 20px;
+  margin-left: auto; 
+  margin-right: auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+}
+
+select, button, input, textarea {
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #34495e;
+}
+
+#output {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #333;
+  white-space: pre-wrap; /* Preserve whitespace formatting */
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-container {
+  overflow-x: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  select, button, input, textarea {
+    font-size: 0.9rem;
+  }
+
+  h1, h2 {
+    font-size: 2rem;
+  }
+}
